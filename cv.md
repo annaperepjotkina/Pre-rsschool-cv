@@ -1,5 +1,5 @@
+![alt-ava](photo_2022-12-11_17-09-34.jpg "My photo")
 # Anna Perepiotkina
-
 ---
 ### Contact information
 * __Phone:__ +375295687538
