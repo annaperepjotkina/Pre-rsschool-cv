@@ -4,9 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
 </head>
-<body>
-    <h1><img src="photo_2022-12-11_17-09-34.jpg" alt="Photo" title="Photo for cv"> Anna Perepiotkina</h1>
+<body class="body">
+    <header class="header">
+       <div class="container"></div>
+       <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#contact information" class="nav-link">Contact information</a></li>
+          <li class="nav-item"><a href="#about me" class="nav-link">About me</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li> 
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#code example" class="nav-link">Code example</a></li>
+          <li class="nav-item"><a href="#langueges" class="nav-link">Langueges</a></li>
+       </ul>
+      </nav>
+    </header>
+    <main class="main">
+        <div class="conteiner main-container">
+        <section class="section section-profile" id="profile">
+            <img src="C:\Users\Чуча\Desktop\start\rsschool-cv\rsschool-cv\assets\images\Photo.jpg" alt="Photo" class="section-profile-logo">
+           <div class="section-profile-title">
+             <h1>ANNA PEREPIOTKINA</h1>
+           </div>
+        </section>
+        <section class="section" id="contact information">
+            <h2 class="section-title">CONTACT INFORMATION</h2>
+          <ul class="section-list">
+        <li class="section-list-item">Phone number: +375295687538</li>
+        <li class="section-list-item">E-mail: 5687538@gmail.com</li>
+        <li class="section-list-item">Discord: Anna Perepjotkina2360</li>
+          </ul>
+        </section>
+        <section class="section" id="about me"> 
+            <h2 class="section-title">About me</h2> 
+            <p class="section-list-item">I've worked as a manager or director 
+                of restaurants more then 11 years.<br>
+                 I want to be front-end developer in the future.</p>
+        </section>
+        <section class="section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul class="section-list">
+                <li class="section-list-item">GitHub</li>
+                <li class="section-list-item">Markdown</li>
+                <li class="section-list-item">HTML&CSS Basics</li>
+                  </ul>
+        </section>
+        <section class="section" id="education">
+                <h2 class="section-title">Education</h2>
+           <ul class="section-list">
+            <li class="section-list-item">Belarusian State Economic University - manager-economist</li>
+            <li class="section-list-item">RS School - student stage-0</li>
+           </ul>
+        </section>
+        <section class="section" id="code example">
+         <h2 class="section-title">Code example</h2>
+         <pre><code>function multiply (a) {
+            return function (b) {
+              return a * b;
+            };
+          };
+         </code></pre>
+        </section>
+        <section class="section" id="language">
+         <h2 class="section-title">language</h2>
+         <ul class="section-list">
+            <li class="section-list-item">Russian - native speaker</li>
+            <li class="section-list-item">English - B1</li>
+         </ul>
+        </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div>© 2022 
+                <a href="https://github.com/annaperepjotkina" class="github nav-link">Anna Perepiotkina</a>
+            </div>
+            <img src="C:\Users\Чуча\Desktop\start\rsschool-cv\rsschool-cv\assets\images\rs_school_js.svg"
+            class="logo" alt="logo">
+          </div>
+    </footer>
 </body>
 </html>
