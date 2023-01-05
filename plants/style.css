@@ -1,49 +1,138 @@
 @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/roboto-v30-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   src: local(''),
+      url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 @font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('../fonts/inter-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/inter-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* inter-700 - latin */
-  @font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    src: local(''),
-         url('../fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   src: local(''),
+      url('../fonts/inter-v12-latin-regular.woff2') format('woff2'),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/inter-v12-latin-regular.woff') format('woff');
+   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
-  /* inika-regular - latin */
+/* inter-700 - latin */
 @font-face {
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('../fonts/inika-v21-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/inika-v21-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* inika-700 - latin */
-  @font-face {
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 700;
-    src: local(''),
-         url('../fonts/inika-v21-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/inika-v21-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  * {
-     box-sizing: border-box;
-  }
-  
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 700;
+   src: local(''),
+      url('../fonts/inter-v12-latin-700.woff2') format('woff2'),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/inter-v12-latin-700.woff') format('woff');
+   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* inika-regular - latin */
+@font-face {
+   font-family: 'Inika';
+   font-style: normal;
+   font-weight: 400;
+   src: local('Inika'),
+      url('../fonts/inika-v21-latin-regular.woff2') format('woff2'),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/inika-v21-latin-regular.woff') format('woff');
+   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* inika-700 - latin */
+@font-face {
+   font-family: 'Inika';
+   font-style: normal;
+   font-weight: 700;
+   src: local('Inika'),
+      url('../fonts/inika-v21-latin-700.woff2') format('woff2'),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/inika-v21-latin-700.woff') format('woff');
+   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.header {
+   width: 1440px;
+   height: 134px;
+   background-color: #EDF2EC;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar {
+   max-width: 1220px;
+   max-height: 50px;
+   margin-top: 36px;
+   margin-left: 51px;
+   background-color: #EDF2EC;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.nav-list {
+   list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.nav-item {
+   margin-left: 46px;
+}
+
+.nav-link {
+   font-family: 'Inika';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   color: #010201;
+   text-decoration: none;
+}
+
+.nav-link:hover,
+.nav_link:focus {
+   color: #E06733;
+}
+
+.main {
+   width: 1440px;
+   height: 532px;
+   left: 0px;
+   top: 134px;
+   background-color: #EDF2EC;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section_welcome {
+   width: 1222px;
+   height: 407.36px;
+   left: 109px;
+   top: 62px;
+}
+
+.footer {
+   background-color: #EDF2EC;
+}
