@@ -174,25 +174,87 @@ body {
    color: #636060;
    max-width: 525.44px;
    margin-bottom: 48px;
-   
 }
 
 .welcome_submit {
    text-transform: uppercase;
    padding: 14px 27px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-color: #000000;
-box-sizing: border-box;
-border: 2px solid #E06733;
-border-radius: 10px;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+   color: #000000;
+   box-sizing: border-box;
+   border: 2px solid #E06733;
+   border-radius: 10px;
 }
 
-.section_about-us {
+.section_about_us {
    border: #FFFFFF;
+   width: 1440px;
+   height: 666px;
+   margin: 0 auto;
+   display: flex;
+}
+
+.about_us {
+   width: 1222px;
+   height: 479px;
+   margin: 93px 109px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.about_us_inform {
+   width: 605px;
+   height: 350px;
+   display: flex;
+   justify-content: left;
+   align-items: flex-start;
+   flex-direction: column;
+   margin: 0;
+}
+
+.about_us_title {
+   font-family: 'Inika';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 52px;
+   color: #499A18;
+   margin-bottom: 40px;
+   max-width: 463px;
+}
+
+.about_us_text {
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+   color: #636060;
+   max-width: 605px;
+}
+
+span {
+   color: #E06733;
+}
+
+.about_us_png {
+   width: 464px;
+   height: 479px;
+   display: flex;
+   justify-content: right;
+   align-items: flex-end;
+   margin: 0;
+}
+
+.houseplant_1png {
+   background: url(./png/houseplant\ 1.png);
 }
 
 .footer {
