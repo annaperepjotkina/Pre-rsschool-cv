@@ -82,12 +82,18 @@ body {
 .navbar {
    max-width: 1220px;
    max-height: 50px;
-   margin-top: 36px;
-   margin-left: 51px;
+   margin: 36px 169px 47px 51px;
    display: flex;
    flex-wrap: wrap;
    align-items: center;
    justify-content: space-between;
+}
+
+.header_logo {
+   width: 79.17px;
+   height: 21.04px;
+   display: flex;
+   align-items: center;
 }
 
 .nav-list {
@@ -378,31 +384,54 @@ span {
 
 .prices_item {
    width: 1222px;
-height: 405px;
-display: flex;
-flex-direction: column;
-justify-content:flex-start;
+   height: 405px;
+   display: flex;
+   flex-direction: column;
+justify-content: space-between;
 }
 
 .prices_title {
    font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 48px;
-color: #000000;
-display: flex;
-margin: 0px;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 48px;
+   color: #000000;
+   display: flex;
+   margin: 0px;
 
 }
 
 .prices_buttons {
    width: 332px;
-height: 282.01px;
-margin-left: 0px;
-margin-top: 60px;
-border: 1px solid #E3E1D5;
-border-radius: 20px;
+   height: 282.01px;
+   margin: 60px auto 13, 98px 0px;
+   padding: 34px 41px;
+   border: 1px solid #E3E1D5;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.prices_button {
+   width: 250px;
+   height: 50px;
+   background: #EDF2EC;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.prices_label {
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 20px;
+   color: #000000;
 }
 
 .prices_contact {
@@ -469,9 +498,7 @@ border-radius: 20px;
    justify-content: space-between;
 }
 
-.contact_button {}
-
-.contact_submit {
+.contact_button {
    width: 450px;
    height: 50px;
    margin-top: 148px;
@@ -486,10 +513,19 @@ border-radius: 20px;
    justify-content: space-between;
 }
 
-.submit_svg {
-   width: 16px;
-   height: 16px;
-   background: #AEA1A1;
+.contact_label {
+   width: 204px;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 40px;
+   letter-spacing: 0.05em;
+   color: #717171;
+   margin-top: 5px;
+   margin-left: 20px;
+   margin-right: 80px;
+   cursor: pointer;
 }
 
 .footer {

@@ -14,7 +14,6 @@
         <div class="navbar">
             <div class="header_logo">
                 <img src="./svg/logo.svg" alt="logo" class="header_logo-pic">
-                </a>
             </div>
             <nav class="nav">
                 <ul class="nav-list">
@@ -116,7 +115,23 @@
             <div class="prices">
                 <div class="prices_item">
                     <p class="prices_title">Prices</p>
-                    <div class="prices_buttons"></div>
+                    <div class="prices_buttons">
+                        <div class="prices_button">
+                            <label class="prices_label" for="prices_button_1">Basics</label>
+                            <input class="prices_input" type="radio" placeholder="Basics" name="basics"
+                                id="prices_button_1">
+                        </div>
+                        <div class="prices_button">
+                            <label class="prices_label" for="prices_button_1">Standard</label>
+                            <input class="prices_input" type="radio" placeholder="Standard" name="standard"
+                                id="prices_button_2">
+                        </div>
+                        <div class="prices_button">
+                            <label class="prices_label" for="prices_button_1">Pro care</label>
+                            <input class="prices_input" type="radio" placeholder="Pro care" name="pro care"
+                                id="prices_button_3">
+                        </div>
+                    </div>
                 </div>
                 <div class="prices_contact">
                     <p class="prices_text">Our best <span>gardeners</span> are ready to help you</p>
@@ -125,15 +140,13 @@
                 </div>
             </div>
         </section>
-        <section class="contact_us" id="contact us">
+        <section class="contact_us" id="contacts">
             <img src="./png/contact_woman 1.png" alt="contact_woman" class="section_contact_png">
             <p class="contact_text">Contact us</p>
             <div class="contact_button">
-                <button class="contact_submit">
-                    <p>City</p>
-                    <img src="./svg/arrow.svg" class="submit_svg">
-                </button>
-
+                <label class="contact_label" for="accord_button_1">City</label>
+                <input class="accord_button" type="radio" placeholder="City" name="city" id="accord_button_1">
+                <div class="contact_button_text"> </div>
             </div>
         </section>
     </main>
