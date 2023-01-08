@@ -39,6 +39,7 @@ body {
 }
 
 .nav-list {
+   padding: 0px;
    list-style: none;
    display: flex;
    flex-wrap: wrap;
@@ -48,6 +49,9 @@ body {
 
 .nav-item {
    margin-left: 46px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
 .nav-link {
@@ -60,8 +64,7 @@ body {
 }
 
 .nav-link:hover,
-.nav_link:active
-.nav-link:focus {
+.nav_link:active .nav-link:focus {
    color: #E06733;
 }
 
@@ -84,7 +87,6 @@ body {
    display: flex;
    flex-wrap: wrap;
    flex-direction: column;
-   align-items: center;
    justify-content: space-between;
 }
 
@@ -101,6 +103,7 @@ body {
    flex-direction: column;
    align-items: flex-start;
    justify-content: space-between;
+   margin-left: 225px;
 }
 
 .welcome_header {
@@ -110,7 +113,7 @@ body {
    font-size: 45px;
    line-height: 50px;
    color: #717171;
-   margin-bottom: 42px;
+   margin-bottom: 23px;
    max-width: 549px;
 }
 
@@ -122,7 +125,7 @@ body {
    line-height: 35px;
    color: #636060;
    max-width: 525.44px;
-   margin-bottom: 48px;
+   margin-bottom: 44px;
 }
 
 .welcome_submit {
@@ -149,7 +152,7 @@ body {
 .section_about_us {
    border: #FFFFFF;
    width: 1440px;
-   height: 666px;
+   height: 697px;
    margin: 0 auto;
    display: flex;
 }
@@ -157,12 +160,10 @@ body {
 .about_us {
    width: 1222px;
    height: 479px;
-   margin: 93px 109px;
+   margin: 93px 109px 94px 109px;
    display: flex;
    flex-wrap: wrap;
    flex-direction: column;
-   align-items: center;
-   justify-content: space-between;
 }
 
 .about_us_inform {
@@ -172,7 +173,7 @@ body {
    justify-content: left;
    align-items: flex-start;
    flex-direction: column;
-   margin: 0;
+   margin-left: 0;
 }
 
 .about_us_title {
@@ -181,7 +182,8 @@ body {
    font-weight: 400;
    font-size: 40px;
    line-height: 52px;
-   margin-bottom: 40px;
+   margin-top: 70px;
+   margin-bottom: 17px;
    max-width: 463px;
    color: #E06733
 }
@@ -204,9 +206,8 @@ span {
    width: 464px;
    height: 479px;
    display: flex;
-   justify-content: right;
-   align-items: flex-end;
-   margin: 0;
+   margin: 0 0 0 150px;
+
 }
 
 .houseplant_1png {
@@ -286,6 +287,7 @@ span {
    height: 450px;
    display: flex;
    flex-direction: column;
+   margin-right: 116px;
 }
 
 #item1 {
@@ -332,6 +334,7 @@ span {
    font-size: 20px;
    line-height: 20px;
    color: #E06733;
+   margin: 0 0;
 }
 
 .service_subtitle {
@@ -349,14 +352,14 @@ span {
 
 .section_prices {
    width: 1440px;
-   height: 560px;
+   height: 521px;
    background: #FFFFFF;
 }
 
 .prices {
    width: 1222px;
    height: 405px;
-   margin: 40px 109px 115px 109px;
+   margin: 10px 109px 115px 109px;
    display: flex;
    justify-content: space-between;
 }
@@ -377,14 +380,15 @@ span {
    line-height: 48px;
    color: #000000;
    display: flex;
-   margin: 0px;
+   margin: 0;
+
 
 }
 
 .prices_buttons {
    width: 332px;
    height: 282.01px;
-   margin: 60px auto 13, 98px 0px;
+   margin: 60px auto 14px 0px;
    padding: 34px 41px;
    border: 1px solid #E3E1D5;
    border-radius: 20px;
@@ -402,6 +406,7 @@ span {
    flex-direction: row;
    justify-content: space-around;
    align-items: center;
+   cursor: pointer;
 }
 
 .prices_label {
@@ -411,6 +416,7 @@ span {
    font-size: 20px;
    line-height: 20px;
    color: #000000;
+   cursor: pointer;
 }
 
 .prices_contact {
@@ -435,18 +441,28 @@ span {
 }
 
 .prices_submit {
-   width: 161px;
+   width: 162px;
    height: 50px;
+   font-family: 'Inika';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 26px;
    color: #E06733;
    border: 1px solid #E06733;
    border-radius: 5px;
    display: flex;
    justify-content: center;
-   margin: auto 0px 39px auto;
-   padding-top: 12px;
-   padding-bottom: 12px;
+   align-items: center;
    background-color: #FFFFFF;
    cursor: pointer;
+   margin-bottom: 18px;
+}
+
+.prices_submit:hover,
+.prices_submit:focus {
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   offset: 0px, 4px;
 }
 
 .contact_us {
@@ -462,7 +478,7 @@ span {
    width: 400px;
    height: 496.99px;
    background: url(./png/contact_woman\ 1.png);
-   margin: 53px 113px auto 109px;
+   margin: 53px 39px auto 109px;
 }
 
 .contact_text {
@@ -476,6 +492,7 @@ span {
    color: #499A18;
    display: flex;
    justify-content: center;
+   margin-top: 60px;
 }
 
 .contact_button {
@@ -516,7 +533,7 @@ span {
 }
 
 .footer_content {
-   width: 1222px;
+   width: 1227px;
    height: 50px;
    margin: 40px 109px;
    display: flex;
@@ -541,15 +558,12 @@ span {
    font-weight: 400;
    font-size: 20px;
    line-height: 50px;
-   color: #000000;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
 }
 
 .foot-link {
    color: #010201;
    text-decoration: none;
+   margin-right: 14px;
 }
 
 .foot-link:hover,
@@ -587,5 +601,5 @@ span {
 
 .social_list_svg :hover {
    border-bottom: 2px #636060;
-   transition: border-bottom 2s 4s ;
+   transition: border-bottom 2s 4s;
 }
