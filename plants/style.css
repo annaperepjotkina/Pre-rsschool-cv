@@ -780,17 +780,28 @@ span {
 
    .contact__title {
       position: relative;
-      bottom: 305px;
-      left: -44px;
+      bottom: 312px;
+      left: -34px;
       margin-top: 0px;
       font-size: 40px;
       line-height: 52px;
    }
 
    .contact__accordion {
-      margin: 195px auto 66px 112px;
+      margin: 194px auto 75px 112px;
    }
-}
+   .footer__content {
+      height: auto;
+      margin: 29px 0px 29px 12px;
+      flex-direction: column;
+   }
+   .footer-text {
+      line-height: 0px;
+   }
+   .social__list {
+      padding-top: 15px;
+  }
+
 
 @media screen and (max-width: 767px) {
 
@@ -967,10 +978,6 @@ span {
       height: 350px;
    }
 
-   .service__text {
-      /*padding: 10px 40px 4px 40px;*/
-   }
-
    .service__subtitle {
       width: 100%;
       height: auto;
@@ -1106,4 +1113,5 @@ span {
    .social__list {
       margin-right: 9px;
    }
+}
 }
