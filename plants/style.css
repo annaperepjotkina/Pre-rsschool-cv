@@ -736,7 +736,7 @@ span {
 
    .prices__wrapper {
       flex-wrap: nowrap;
-      margin-bottom: 280px;
+      margin-bottom: 88px;
    }
 
    .prices__title {
@@ -962,12 +962,13 @@ span {
    }
 
    .service_item_png {
+      box-sizing: content-box;
       width: 280px;
       height: 350px;
    }
 
    .service__text {
-      padding: 10px 40px 4px 40px;
+      /*padding: 10px 40px 4px 40px;*/
    }
 
    .service__subtitle {
@@ -994,7 +995,6 @@ span {
    .prices__wrapper {
       flex-wrap: wrap;
       padding-top: 25px;
-      margin-bottom: 10px;
       justify-content: center;
    }
 
