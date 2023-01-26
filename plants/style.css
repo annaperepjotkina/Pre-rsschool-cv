@@ -363,7 +363,6 @@ span {
    padding-top: 40px;
    margin-bottom: 115px;
    display: flex;
-   flex-wrap: wrap;
    justify-content: space-between;
 }
 
@@ -659,20 +658,27 @@ span {
       flex-wrap: nowrap;
       flex-direction: row-reverse;
       padding-top: 0px;
-      padding-bottom: 60px;
+      padding-bottom: 68px;
    }
 
    .welcome__title-text {
       font-size: 35px;
-      line-height: 50px;
+      line-height: 45px;
    }
 
    .welcome__subtitle {
       font-size: 16px;
+      margin-left: 3px;
       line-height: 25px;
       max-width: 341px;
-      margin-top: 0px;
-      margin-bottom: 35px;
+      margin-top: 12px;
+      margin-bottom: 33px;
+   }
+
+   .welcome__submit {
+      width: 157px;
+      height: 46px;
+      padding: 0px;
    }
 
    .leaves_png {
@@ -681,7 +687,8 @@ span {
    }
 
    .about-us__wrapper {
-      padding: 9px 0px 94px 0px;
+      width: 100%;
+      padding: 13px 0px 89px 0px;
    }
 
    .about-us__title {
@@ -692,9 +699,14 @@ span {
 
    .about-us__subtitle {
       width: 668px;
-      margin-bottom: 25px;
+      margin-bottom: 31px;
+      margin-top: 13px;
       font-size: 20px;
       line-height: 30px;
+   }
+
+   .about-us__inform {
+      max-width: 100%;
    }
 
    .houseplant_1png {
@@ -729,9 +741,21 @@ span {
       height: 350px;
    }
 
+   .service__title {
+      padding-top: 9px;
+   }
+
+   .service__subtitle {
+      text-align: center;
+      width: 74%;
+      height: 60px;
+      margin: 0px;
+      padding-top: 8px;
+   }
+
    .service__buttons {
       padding-left: 0;
-      padding-top: 36px;
+      padding-top: 40px;
    }
 
    .prices__wrapper {
@@ -770,7 +794,7 @@ span {
    .section__contact-img {
       max-width: 200px;
       max-height: 248.49px;
-      margin: 42px 290px 0px 245px;
+      margin: 39px 290px 0px 245px;
    }
 
    .section__contact-png {
@@ -787,331 +811,340 @@ span {
       line-height: 52px;
    }
 
+   .contact__title__text {
+      width: 192px;
+      height: 53px;
+      line-height: 42px;
+   }
+
    .contact__accordion {
       margin: 194px auto 75px 112px;
    }
+
    .footer__content {
       height: auto;
       margin: 29px 0px 29px 12px;
       flex-direction: column;
    }
+
    .footer-text {
       line-height: 0px;
    }
+
    .social__list {
       padding-top: 15px;
-  }
-
-
-@media screen and (max-width: 767px) {
-
-   /*Start burger*/
-   .header__burger {
-      display: block;
-      transition: 2s;
-      cursor: pointer;
    }
 
-   .header_logo {
-      position: relative;
-      z-index: 11;
+
+   @media screen and (max-width: 767px) {
+
+      /*Start burger*/
+      .header__burger {
+         display: block;
+         transition: 2s;
+         cursor: pointer;
+      }
+
+      .header_logo {
+         position: relative;
+         z-index: 11;
+      }
+
+      .nav {
+         width: 100%;
+         height: 100%;
+         position: fixed;
+         top: 0;
+         left: 0;
+         background-color: #EDF2EC;
+         z-index: 10;
+         /*Скроет все элемнты,кроме nav и бургер в том числе*/
+         padding: 80px 100px 100px 60px;
+         transform: translateX(100%);
+         transition: 2s;
+      }
+
+      .nav-list {
+         padding-left: 0;
+      }
+
+      .nav_active {
+         transform: translateX(0);
+      }
+
+      .nav-item {
+         width: 100%;
+         margin-left: 0;
+      }
+
+      .nav-link {
+         font-size: 35px;
+         line-height: 55px;
+         color: #646262;
+      }
+
+      .nav-link:hover {
+         color: #E06733;
+         cursor: pointer;
+         transition: 2s;
+      }
+
+      .header__nav-close {
+         width: 40px;
+         height: 40px;
+         position: absolute;
+         top: 20px;
+         right: 20px;
+         z-index: 11;
+      }
+
+      .header__nav-close-line {
+         display: block;
+         width: 100%;
+         border: 2px solid #717171;
+         position: absolute;
+         top: 50%;
+      }
+
+      .header__nav-close-line:first-child {
+         transform: translateY(-50%) rotate(45deg);
+      }
+
+      .header__nav-close-line:last-child {
+         transform: translateY(-50%) rotate(-45deg);
+      }
+
+      /*Finish burger*/
+
+      .wrapper {
+         padding: 0px 25px;
+      }
+
+      .header {
+         width: 100%;
+         height: 96px;
+      }
+
+      .welcome__wrapper {
+         padding-bottom: 23px;
+      }
+
+      .welcome__title-text {
+         font-size: 25px;
+         line-height: 35px;
+         margin-top: 22px;
+      }
+
+      .welcome__subtitle {
+         font-size: 16px;
+         line-height: 25px;
+         margin-bottom: 25px;
+      }
+
+      .section__welcome-png {
+         display: none;
+      }
+
+      .welcome__submit {
+         font-size: 10px;
+         line-height: 20px;
+         width: 100px;
+         height: 34.14px;
+         padding: 0;
+      }
+
+      .about-us__wrapper {
+         padding-bottom: 27px;
+      }
+
+      .about-us__inform {
+         width: 100%;
+      }
+
+      .about-us__title {
+         font-size: 25px;
+         line-height: 33px;
+         text-align: center;
+         margin-bottom: 0px;
+      }
+
+      .about-us__subtitle {
+         width: 100%;
+         font-size: 15px;
+         line-height: 25px;
+         margin-bottom: 0px;
+      }
+
+      .houseplant_1png {
+         width: 150px;
+         height: 147px;
+         margin: 7px auto 0px 89px;
+      }
+
+      .service__wrapper {
+         padding-top: 30px;
+      }
+
+      .service__header-title {
+         width: 187px;
+         height: 69px;
+         font-size: 25px;
+         line-height: 33px;
+      }
+
+      .services {
+         margin-bottom: 47px;
+         margin-top: 0px;
+         box-sizing: content-box;
+         justify-content: center;
+      }
+
+      .service__item {
+         width: 281px;
+         height: 450px;
+         padding-top: 30px;
+      }
+
+      .service_item_png {
+         box-sizing: content-box;
+         width: 280px;
+         height: 350px;
+      }
+
+      .service__subtitle {
+         width: 100%;
+         height: auto;
+      }
+
+      .service__buttons {
+         padding-top: 35px;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: flex-start;
+
+      }
+
+      .service__submit {
+         width: 121px;
+         height: 35px;
+         font-size: 15px;
+         line-height: 20px;
+         margin: 0px 10px 9px 0px;
+      }
+
+      .prices__wrapper {
+         flex-wrap: wrap;
+         padding-top: 25px;
+         justify-content: center;
+      }
+
+      .prices__title {
+         font-size: 25px;
+         line-height: 30px;
+         justify-content: center;
+      }
+
+      .prices__buttons {
+         width: 224px;
+         height: 235px;
+         margin: 36px 26px 19px 52px;
+         padding: 29px 22px;
+      }
+
+      .prices_button {
+         width: 180px;
+         height: 49.72px;
+      }
+
+      .prices_label {
+         font-size: 15px;
+         line-height: 20px;
+      }
+
+      .prices__contact {
+         padding: 0px;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .prices__text {
+         width: 230px;
+         height: 77px;
+         font-size: 20px;
+         line-height: 35px;
+         text-align: center;
+         margin-bottom: 12px;
+      }
+
+      .prices__submit {
+         width: 121px;
+         height: 35px;
+         font-size: 15px;
+         line-height: 20px;
+      }
+
+      .section__prices-png {
+         display: none;
+      }
+
+      .contact__us__wrapper {
+         align-items: center;
+      }
+
+      .section__contact-png {
+         width: 100px;
+         height: 124.25px;
+         align-items: flex-end;
+      }
+
+      .section__contact-img {
+         width: 100px;
+         height: 124.25px;
+         margin: 98px 0px 0px 0px;
+      }
+
+      .contact__title {
+         width: 192px;
+         height: 34px;
+         position: relative;
+         bottom: 163px;
+         left: 33px;
+      }
+
+      .contact__title__text {
+         margin: 0px;
+         font-size: 25px;
+         line-height: 33px;
+      }
+
+      .contact__accordion {
+         width: 100%;
+         height: 50px;
+         margin: 141px 0px auto 0px;
+      }
+
+      .contact__accordion-header {
+         font-size: 20px;
+         padding: 27px 35px 26px 33px;
+      }
+
+      .footer__content {
+         flex-direction: column;
+         text-align: center;
+         margin: 22px auto 0px 12px;
+      }
+
+      .footer__data {
+         height: 24px;
+
+      }
+
+      .footer-text {
+         margin: 0px;
+      }
+
+      .social__list {
+         margin-right: 9px;
+      }
    }
-
-   .nav {
-      width: 100%;
-      height: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background-color: #EDF2EC;
-      z-index: 10;
-      /*Скроет все элемнты,кроме nav и бургер в том числе*/
-      padding: 80px 100px 100px 60px;
-      transform: translateX(100%);
-      transition: 2s;
-   }
-
-   .nav-list {
-      padding-left: 0;
-   }
-
-   .nav_active {
-      transform: translateX(0);
-   }
-
-   .nav-item {
-      width: 100%;
-      margin-left: 0;
-   }
-
-   .nav-link {
-      font-size: 35px;
-      line-height: 55px;
-      color: #646262;
-   }
-
-   .nav-link:hover {
-      color: #E06733;
-      cursor: pointer;
-      transition: 2s;
-   }
-
-   .header__nav-close {
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      z-index: 11;
-   }
-
-   .header__nav-close-line {
-      display: block;
-      width: 100%;
-      border: 2px solid #717171;
-      position: absolute;
-      top: 50%;
-   }
-
-   .header__nav-close-line:first-child {
-      transform: translateY(-50%) rotate(45deg);
-   }
-
-   .header__nav-close-line:last-child {
-      transform: translateY(-50%) rotate(-45deg);
-   }
-
-   /*Finish burger*/
-
-   .wrapper {
-      padding: 0px 25px;
-   }
-
-   .header {
-      width: 100%;
-      height: 96px;
-   }
-
-   .welcome__wrapper {
-      padding-bottom: 23px;
-   }
-
-   .welcome__title-text {
-      font-size: 25px;
-      line-height: 35px;
-      margin-top: 22px;
-   }
-
-   .welcome__subtitle {
-      font-size: 16px;
-      line-height: 25px;
-      margin-bottom: 25px;
-   }
-
-   .section__welcome-png {
-      display: none;
-   }
-
-   .welcome__submit {
-      font-size: 10px;
-      line-height: 20px;
-      width: 100px;
-      height: 34.14px;
-      padding: 0;
-   }
-
-   .about-us__wrapper {
-      padding-bottom: 27px;
-   }
-
-   .about-us__inform {
-      width: 100%;
-   }
-
-   .about-us__title {
-      font-size: 25px;
-      line-height: 33px;
-      text-align: center;
-      margin-bottom: 0px;
-   }
-
-   .about-us__subtitle {
-      width: 100%;
-      font-size: 15px;
-      line-height: 25px;
-      margin-bottom: 0px;
-   }
-
-   .houseplant_1png {
-      width: 150px;
-      height: 147px;
-      margin: 7px auto 0px 89px;
-   }
-
-   .service__wrapper {
-      padding-top: 30px;
-   }
-
-   .service__header-title {
-      width: 187px;
-      height: 69px;
-      font-size: 25px;
-      line-height: 33px;
-   }
-
-   .services {
-      margin-bottom: 47px;
-      margin-top: 0px;
-      box-sizing: content-box;
-      justify-content: center;
-   }
-
-   .service__item {
-      width: 281px;
-      height: 450px;
-      padding-top: 30px;
-   }
-
-   .service_item_png {
-      box-sizing: content-box;
-      width: 280px;
-      height: 350px;
-   }
-
-   .service__subtitle {
-      width: 100%;
-      height: auto;
-   }
-
-   .service__buttons {
-      padding-top: 35px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-
-   }
-
-   .service__submit {
-      width: 121px;
-      height: 35px;
-      font-size: 15px;
-      line-height: 20px;
-      margin: 0px 10px 9px 0px;
-   }
-
-   .prices__wrapper {
-      flex-wrap: wrap;
-      padding-top: 25px;
-      justify-content: center;
-   }
-
-   .prices__title {
-      font-size: 25px;
-      line-height: 30px;
-      justify-content: center;
-   }
-
-   .prices__buttons {
-      width: 224px;
-      height: 235px;
-      margin: 36px 26px 19px 52px;
-      padding: 29px 22px;
-   }
-
-   .prices_button {
-      width: 180px;
-      height: 49.72px;
-   }
-
-   .prices_label {
-      font-size: 15px;
-      line-height: 20px;
-   }
-
-   .prices__contact {
-      padding: 0px;
-      justify-content: center;
-      align-items: center;
-   }
-
-   .prices__text {
-      width: 230px;
-      height: 77px;
-      font-size: 20px;
-      line-height: 35px;
-      text-align: center;
-      margin-bottom: 12px;
-   }
-
-   .prices__submit {
-      width: 121px;
-      height: 35px;
-      font-size: 15px;
-      line-height: 20px;
-   }
-
-   .section__prices-png {
-      display: none;
-   }
-
-   .contact__us__wrapper {
-      align-items: center;
-   }
-
-   .section__contact-png {
-      width: 100px;
-      height: 124.25px;
-      align-items: flex-end;
-   }
-
-   .section__contact-img {
-      width: 100px;
-      height: 124.25px;
-      margin: 98px 0px 0px 0px;
-   }
-
-   .contact__title {
-      width: 192px;
-      height: 34px;
-      position: relative;
-      bottom: 163px;
-      left: 33px;
-   }
-
-   .contact__title__text {
-      margin: 0px;
-      font-size: 25px;
-      line-height: 33px;
-   }
-
-   .contact__accordion {
-      width: 100%;
-      height: 50px;
-      margin: 141px 0px auto 0px;
-   }
-
-   .contact__accordion-header {
-      font-size: 20px;
-      padding: 27px 35px 26px 33px;
-   }
-
-   .footer__content {
-      flex-direction: column;
-      text-align: center;
-      margin: 22px auto 0px 12px;
-   }
-
-   .footer__data {
-      height: 24px;
-
-   }
-
-   .footer-text {
-      margin: 0px;
-   }
-
-   .social__list {
-      margin-right: 9px;
-   }
-}
 }
