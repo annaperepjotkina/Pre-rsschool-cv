@@ -932,13 +932,14 @@ span {
       .welcome__title-text {
          font-size: 25px;
          line-height: 35px;
-         margin-top: 22px;
+         margin-top: 24px;
       }
 
       .welcome__subtitle {
          font-size: 16px;
          line-height: 25px;
-         margin-bottom: 25px;
+         margin-bottom: 23px;
+         margin-top: 0px;
       }
 
       .section__welcome-png {
@@ -978,7 +979,7 @@ span {
       .houseplant_1png {
          width: 150px;
          height: 147px;
-         margin: 7px auto 0px 89px;
+         margin: 4px auto 0px 89px;
       }
 
       .service__wrapper {
@@ -1012,7 +1013,8 @@ span {
       }
 
       .service__subtitle {
-         width: 100%;
+         text-align: center;
+         width: 93%;
          height: auto;
       }
 
@@ -1035,6 +1037,7 @@ span {
       .prices__wrapper {
          flex-wrap: wrap;
          padding-top: 25px;
+         margin-bottom: 10px;
          justify-content: center;
       }
 
@@ -1135,14 +1138,16 @@ span {
       }
 
       .footer__data {
-         height: 24px;
+         height: 80px;
 
       }
 
       .footer-text {
          margin: 0px;
       }
-
+      .foot-link {
+         margin-right: 0px;
+      }
       .social__list {
          margin-right: 9px;
       }
